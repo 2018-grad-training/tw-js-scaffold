@@ -7,17 +7,18 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "**/*.js": [
+    "src/**/*.js": [
       "eslint --fix",
       "git add"
     ],
-    "**/*.{css,scss}": [
+    "src/**/*.{css,scss}": [
       "prettier --write",
       "git add"
     ]
   },
-  "author": "",
-  "license": "ISC",
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "dependencies": {
     "colors": "^1.3.1"
   },
