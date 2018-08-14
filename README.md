@@ -8,4 +8,14 @@ npm run babel
 node dist/index.js
 ```
 
+### typescript
+使用babel转换typescript为js文件。
+```
+npm run tsc
+```
+运行编译后js文件
+```
+node dist/index.js
+```
+
 **NOTE**：提交时会自动检查eslint和prettier错误，需要根据提示错误修改代码后再次提交。
