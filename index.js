@@ -1,3 +1,3 @@
-const colors = require('colors');
+require('colors');
 
 console.log('Hello,'.red, 'npm!'.green);
