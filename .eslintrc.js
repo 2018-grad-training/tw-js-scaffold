@@ -6,11 +6,13 @@ module.exports = {
   "plugins": [
     "prettier"
   ],
+  "parser": "babel-eslint",
   "env": {
     "browser": true,
     "jasmine": true
   },
   "rules": {
-    "prettier/prettier": ["error", { "singleQuote": true }]
+    "prettier/prettier": ["error", { "singleQuote": true }],
+    "strict": 0
   }
 };
