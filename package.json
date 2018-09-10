@@ -4,19 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "precommit": "lint-staged",
     "babel": "./node_modules/.bin/babel src -d dist",
-    "tsc": "tsc --emitDeclarationOnly && babel src --out-dir dist --extensions \".ts,.tsx\""
-  },
-  "lint-staged": {
-    "src/**/*.js": [
-      "eslint --fix",
-      "git add"
-    ],
-    "src/**/*.{css,scss}": [
-      "prettier --write",
-      "git add"
-    ]
+    "tsc": "tsc && babel src --out-dir dist --extensions \".ts,.tsx\""
   },
   "engines": {
     "node": ">=6.0.0"
@@ -28,6 +17,7 @@
     "@babel/cli": "^7.0.0-beta.49",
     "@babel/core": "^7.0.0-beta.49",
     "@babel/plugin-proposal-class-properties": "^7.0.0-beta.49",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.49",
     "@babel/preset-env": "^7.0.0-beta.49",
     "@babel/preset-typescript": "^7.0.0-beta.49",
